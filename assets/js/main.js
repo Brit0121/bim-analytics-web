@@ -9,7 +9,7 @@
 const SITE_CONFIG = {
   email: "consulting@bim-analytics.io",
   domain: "https://bim-analytics.io",
-  whatsapp: "https://wa.me/51993463118", // Official confirmed WhatsApp link
+  whatsapp: "https://wa.me/51993463118?text=Hola%20BIM%20Analytics%2C%20deseo%20solicitar%20informaci%C3%B3n.", // Official confirmed WhatsApp link with precargado message
   phone: "",    // TODO: Add official phone number when confirmed
   address: ""   // TODO: Add official institutional address when confirmed
 };
@@ -29,11 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
  * (WhatsApp, Phone, Exact Address)
  */
 function applyDynamicConfig() {
-  // If WhatsApp number is confirmed in SITE_CONFIG, update all wa.me links
+  // If WhatsApp number or link is confirmed in SITE_CONFIG, update all wa.me links
   if (SITE_CONFIG.whatsapp && SITE_CONFIG.whatsapp.trim() !== '') {
-    const cleanNumber = SITE_CONFIG.whatsapp.replace(/\D/g, '');
+    const targetUrl = SITE_CONFIG.whatsapp.startsWith('http')
+      ? SITE_CONFIG.whatsapp
+      : `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}`;
     document.querySelectorAll('a[href*="wa.me"]').forEach(el => {
-      el.href = `https://wa.me/${cleanNumber}`;
+      el.href = targetUrl;
     });
   }
 
@@ -44,7 +46,17 @@ function applyDynamicConfig() {
       el.style.display = 'none';
       el.setAttribute('aria-hidden', 'true');
     } else {
-      el.href = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}`;
+      const targetUrl = SITE_CONFIG.whatsapp.startsWith('http')
+        ? SITE_CONFIG.whatsapp
+        : `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}`;
+      if (el.tagName === 'A') {
+        el.href = targetUrl;
+      } else {
+        const link = el.querySelector('a');
+        if (link) link.href = targetUrl;
+      }
+      el.style.display = '';
+      el.removeAttribute('aria-hidden');
     }
   });
 
