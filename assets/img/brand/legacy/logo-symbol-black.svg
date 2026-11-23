@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Layer 1 (Top) -->
+  <polygon points="16,22 54,37 54,47 16,32" fill="#2C2522" />
+  <polygon points="54,37 78,28 78,38 54,47" fill="#2C2522" opacity="0.8" />
+  
+  <!-- Layer 2 (Middle) -->
+  <polygon points="16,42 54,57 54,67 16,52" fill="#2C2522" />
+  <polygon points="54,57 84,46 84,56 54,67" fill="#2C2522" opacity="0.8" />
+  
+  <!-- Layer 3 (Bottom) -->
+  <polygon points="24,62 54,74 54,84 24,72" fill="#2C2522" />
+  <polygon points="54,74 74,66 74,76 54,84" fill="#2C2522" opacity="0.8" />
+</svg>

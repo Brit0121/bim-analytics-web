@@ -1,0 +1,39 @@
+# Environment & Credentials
+.env
+.env.*
+*.env
+
+# Dependencies & Package Managers
+node_modules/
+
+# Operating System & File System Artifacts
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+
+# Cache & Temporary Files
+.cache/
+*.tmp
+*.log
+0
+
+# Audit Screenshots & Antigravity Validation Evidence
+captura_*.png
+desktop_*.png
+mobile_*.png
+assets/screenshots/
+assets/img/hero/temp_*
+assets/img/hero/test-*
+
+# Development & Diagnostic Scripts
+test_screenshots.ps1
+scripts/

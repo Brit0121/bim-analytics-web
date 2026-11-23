@@ -1,0 +1,608 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIM Analytics | Información coordinada para construir mejor</title>
+  <meta name="description" content="Consultoría BIM y capacitación profesional en el Perú, para planificar, diseñar, coordinar y ejecutar proyectos de construcción con mayor eficiencia, calidad y control.">
+  <link rel="canonical" href="https://bim-analytics.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bim-analytics.io/">
+  <meta property="og:title" content="BIM Analytics | Información coordinada para construir mejor">
+  <meta property="og:description" content="Consultoría BIM y capacitación profesional en el Perú. Modelado, coordinación técnica y formación aplicada para el sector construcción.">
+  <meta property="og:image" content="https://bim-analytics.io/assets/img/brand/og-image.png">
+
+    <!-- Favicons & Manifest -->
+  <link rel="icon" type="image/x-icon" href="assets/img/brand/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/brand/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/brand/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/brand/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#2A1F1A">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BIM Analytics",
+    "url": "https://bim-analytics.io",
+    "logo": "https://bim-analytics.io/assets/img/brand/logo-bim-analytics-horizontal.png",
+    "email": "consulting@bim-analytics.io",
+    "areaServed": "PE",
+    "description": "Consultoría BIM y capacitación profesional en el Perú."
+  }
+  </script>
+</head>
+<body class="bg-crema">
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header & Hero Unificado Compartido -->
+  <header class="site-header site-header--unified" role="banner">
+    <div class="container header-inner">
+      <div class="header-brand-wrap">
+        <a class="site-logo" href="index.html" aria-label="BIM Analytics — Ir al inicio">
+          <img src="assets/img/brand/logo-bim-analytics-dark.png" alt="BIM Analytics" width="898" height="378" class="brand-logo-img">
+        </a>
+        <span class="header-descriptor" aria-hidden="true">Consultoría BIM y capacitación profesional</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav main-nav--unified" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="soluciones.html" class="nav-link">Soluciones</a></li>
+          <li><a href="capacitaciones.html" class="nav-link">Capacitaciones</a></li>
+          <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Header Actions -->
+      <div class="header-actions">
+        <a href="contacto.html" class="btn btn-header btn-header--unified">Solicitar información</a>
+        <a href="https://wa.me/51993463118" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp (+51 993 463 118)" title="+51 993 463 118">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15ZM16.57 14.39C16.32 14.27 15.1 13.66 14.88 13.58C14.65 13.5 14.49 13.46 14.32 13.7C14.16 13.95 13.69 14.51 13.54 14.67C13.4 14.83 13.25 14.86 13 14.73C12.75 14.61 11.96 14.35 11.02 13.51C10.29 12.86 9.8 12.05 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.73 10.3 10.62 10.38 10.46C10.46 10.3 10.42 10.15 10.36 10.03C10.3 9.91 9.8 8.69 9.6 8.19C9.4 7.71 9.2 7.77 9.05 7.76H8.58C8.42 7.76 8.15 7.82 7.93 8.07C7.7 8.31 7.07 8.9 7.07 10.12C7.07 11.33 7.96 12.5 8.08 12.67C8.21 12.83 9.82 15.31 12.28 16.37C12.87 16.62 13.32 16.77 13.68 16.89C14.27 17.07 14.81 17.05 15.24 16.98C15.71 16.91 16.69 16.39 16.9 15.81C17.1 15.22 17.1 14.73 17.04 14.63C16.98 14.52 16.82 14.46 16.57 14.39Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button type="button" class="menu-toggle menu-toggle--unified" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobileNavPanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Navigation Panel -->
+  <div id="mobileNavPanel" class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Menú principal móvil">
+    <div class="mobile-nav-header">
+      <a class="site-logo" href="index.html" aria-label="BIM Analytics — Ir al inicio">
+        <img src="assets/img/brand/logo-bim-analytics-horizontal.png" alt="BIM Analytics" width="898" height="378">
+      </a>
+      <button type="button" class="mobile-close-btn" aria-label="Cerrar menú de navegación">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link active">Inicio</a></li>
+      <li><a href="nosotros.html" class="mobile-nav-link">Nosotros</a></li>
+      <li><a href="soluciones.html" class="mobile-nav-link">Soluciones</a></li>
+      <li><a href="capacitaciones.html" class="mobile-nav-link">Capacitaciones</a></li>
+      <li><a href="proyectos.html" class="mobile-nav-link">Proyectos</a></li>
+      <li><a href="contacto.html" class="mobile-nav-link">Contacto</a></li>
+    </ul>
+    <div class="mobile-nav-actions">
+      <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+      <a href="https://wa.me/51993463118" class="btn btn-whatsapp mobile-nav-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp (+51 993 463 118)" title="+51 993 463 118">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15ZM16.57 14.39C16.32 14.27 15.1 13.66 14.88 13.58C14.65 13.5 14.49 13.46 14.32 13.7C14.16 13.95 13.69 14.51 13.54 14.67C13.4 14.83 13.25 14.86 13 14.73C12.75 14.61 11.96 14.35 11.02 13.51C10.29 12.86 9.8 12.05 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.73 10.3 10.62 10.38 10.46C10.46 10.3 10.42 10.15 10.36 10.03C10.3 9.91 9.8 8.69 9.6 8.19C9.4 7.71 9.2 7.77 9.05 7.76H8.58C8.42 7.76 8.15 7.82 7.93 8.07C7.7 8.31 7.07 8.9 7.07 10.12C7.07 11.33 7.96 12.5 8.08 12.67C8.21 12.83 9.82 15.31 12.28 16.37C12.87 16.62 13.32 16.77 13.68 16.89C14.27 17.07 14.81 17.05 15.24 16.98C15.71 16.91 16.69 16.39 16.9 15.81C17.1 15.22 17.1 14.73 17.04 14.63C16.98 14.52 16.82 14.46 16.57 14.39Z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+    <div class="mobile-nav-footer">
+      <p class="mobile-contact-info">
+        Información y Consultoría Oficial:<br>
+        <a href="mailto:consulting@bim-analytics.io">consulting@bim-analytics.io</a><br>
+        <a href="https://wa.me/51993463118" target="_blank" rel="noopener noreferrer">+51 993 463 118</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-unified-wrapper">
+    <!-- 1. Hero Principal Unificado -->
+    <section class="page-hero page-hero--unified" aria-labelledby="hero-title">
+      <div class="container hero-unified-container">
+        <div class="hero-unified-grid">
+          <div class="hero-copy hero-unified-copy animate-fade-up">
+            <span class="tech-tag tech-tag--unified">Consultoría BIM y Capacitación Profesional</span>
+            <h1 id="hero-title" class="hero-title hero-title--unified">Información coordinada para construir mejor</h1>
+            <p class="hero-description hero-description--unified">
+              Consultoría BIM y capacitación profesional en el Perú para planificar, diseñar, coordinar y ejecutar proyectos de construcción con mayor eficiencia, calidad y control.
+            </p>
+            <div class="hero-actions">
+              <a href="soluciones.html" class="btn btn-primary">
+                <span>Conoce nuestras soluciones</span>
+                <span class="btn-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-spacer" aria-hidden="true"></div>
+
+          <div class="hero-media hero-unified-media animate-fade-up delay-1">
+            <img src="assets/img/hero/hero-professional-cutout.png" alt="Ingeniera y coordinadora BIM con casco técnico y tablet digital visualizando modelo constructivo tridimensional" class="hero-cutout-img" width="896" height="1200" fetchpriority="high" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- 2. Franja de Áreas (Ribbon) -->
+    <section class="areas-ribbon" aria-label="Áreas de especialidad técnica">
+      <div class="container">
+        <div class="areas-ribbon-grid">
+          <div class="area-ribbon-item">
+            <div class="area-ribbon-icon" aria-hidden="true">
+              <img src="assets/icons/icon-layers.svg" alt="" width="28" height="28">
+            </div>
+            <span class="area-ribbon-title">Consultoría BIM</span>
+          </div>
+          <div class="area-ribbon-item">
+            <div class="area-ribbon-icon" aria-hidden="true">
+              <img src="assets/icons/icon-cube.svg" alt="" width="28" height="28">
+            </div>
+            <span class="area-ribbon-title">Modelado y coordinación</span>
+          </div>
+          <div class="area-ribbon-item">
+            <div class="area-ribbon-icon" aria-hidden="true">
+              <img src="assets/icons/icon-building.svg" alt="" width="28" height="28">
+            </div>
+            <span class="area-ribbon-title">Gestión de proyectos</span>
+          </div>
+          <div class="area-ribbon-item">
+            <div class="area-ribbon-icon" aria-hidden="true">
+              <img src="assets/icons/icon-laptop.svg" alt="" width="28" height="28">
+            </div>
+            <span class="area-ribbon-title">Capacitación profesional</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Soluciones Principales (6 soluciones) -->
+    <section class="content-section bg-white" aria-labelledby="soluciones-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="soluciones-title" class="section-title">
+            <span>Soluciones Principales</span>
+            <span class="section-title-line" aria-hidden="true"></span>
+          </h2>
+          <p class="section-subtitle-text">Servicios estructurados para acompañar a organizaciones y equipos de proyecto en cada fase del ciclo constructivo.</p>
+        </div>
+
+        <div class="cards-grid-6">
+          <!-- 1. Implementación BIM -->
+          <article class="info-card animate-fade-up delay-1">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <img src="assets/icons/icon-layers.svg" alt="" width="40" height="40">
+            </div>
+            <h3 class="card-title">Implementación BIM</h3>
+            <p class="card-desc">Definición de procesos, estándares y entorno común de datos en tu organización con soporte metodológico en la adopción.</p>
+            <a href="soluciones.html#implementacion" class="card-link">
+              <span>Ver solución</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- 2. Modelado BIM -->
+          <article class="info-card animate-fade-up delay-2">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <img src="assets/icons/icon-cube.svg" alt="" width="40" height="40">
+            </div>
+            <h3 class="card-title">Modelado BIM</h3>
+            <p class="card-desc">Desarrollo de modelos coordinados con estructura, arquitectura e instalaciones según el nivel de información requerido.</p>
+            <a href="soluciones.html#modelado" class="card-link">
+              <span>Ver solución</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- 3. Coordinación de especialidades -->
+          <article class="info-card animate-fade-up delay-3">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <img src="assets/icons/icon-building.svg" alt="" width="40" height="40">
+            </div>
+            <h3 class="card-title">Coordinación de especialidades</h3>
+            <p class="card-desc">Integración y revisión continua para detectar y resolver interferencias espaciales antes de la ejecución física.</p>
+            <a href="soluciones.html#coordinacion" class="card-link">
+              <span>Ver solución</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- 4. Gestión de información -->
+          <article class="info-card animate-fade-up delay-1">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <img src="assets/icons/icon-folder.svg" alt="" width="40" height="40">
+            </div>
+            <h3 class="card-title">Gestión de información</h3>
+            <p class="card-desc">Estructuración, control y trazabilidad de parámetros, metadatos y documentación técnica conforme a estándares BIM.</p>
+            <a href="soluciones.html#gestion" class="card-link">
+              <span>Ver solución</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- 5. Planificación 4D -->
+          <article class="info-card animate-fade-up delay-2">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <img src="assets/icons/icon-calendar.svg" alt="" width="40" height="40">
+            </div>
+            <h3 class="card-title">Planificación 4D</h3>
+            <p class="card-desc">Vinculación del modelo geométrico con el cronograma de obra para analizar secuencias constructivas y frentes de trabajo.</p>
+            <a href="soluciones.html#planificacion" class="card-link">
+              <span>Ver solución</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- 6. Acompañamiento BIM -->
+          <article class="info-card animate-fade-up delay-3">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <img src="assets/icons/icon-helmet.svg" alt="" width="40" height="40">
+            </div>
+            <h3 class="card-title">Acompañamiento BIM</h3>
+            <p class="card-desc">Asesoría técnica y soporte continuo en campo durante la obra, asegurando el cumplimiento de los objetivos proyectados.</p>
+            <a href="soluciones.html#acompanamiento" class="card-link">
+              <span>Ver solución</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Enfoque BIM (Divided visual section) -->
+    <section class="content-section bg-arena-soft" aria-labelledby="enfoque-title">
+      <div class="container split-hero-focus">
+        <div class="animate-fade-up">
+          <span class="tech-tag">Criterio Metodológico</span>
+          <h2 id="enfoque-title" class="section-title" style="margin-bottom: 18px; text-transform: none;">
+            Integración de personas, procesos y modelos digitales
+          </h2>
+          <p style="font-size: 1.05rem; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 24px;">
+            El valor de BIM radica en generar certidumbre antes de construir. En BIM Analytics conectamos el criterio de ingeniería y arquitectura con herramientas avanzadas para anticipar contingencias, optimizar recursos y asegurar coherencia técnica en cada entregable.
+          </p>
+
+          <ul class="benefits-checklist">
+            <li class="benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Información centralizada</span>
+            </li>
+            <li class="benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Mejor coordinación</span>
+            </li>
+            <li class="benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Trazabilidad técnica</span>
+            </li>
+            <li class="benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Apoyo a la toma de decisiones</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="animate-fade-up delay-1" style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--color-arena-border); box-shadow: var(--shadow-md);">
+          <img src="assets/img/services/bim-enfoque.webp" alt="Estación de ingeniería revisando modelo tridimensional y planos de estructuras" style="width: 100%; height: 420px; object-fit: cover;" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Capacitaciones Destacadas (3-4 programas) -->
+    <section class="content-section bg-white" aria-labelledby="capacitaciones-destacadas-title">
+      <div class="container">
+        <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <h2 id="capacitaciones-destacadas-title" class="section-title">
+              <span>Capacitaciones Destacadas</span>
+              <span class="section-title-line" aria-hidden="true"></span>
+            </h2>
+            <p class="section-subtitle-text">Programas prácticos diseñados para profesionales y equipos técnicos del sector construcción.</p>
+          </div>
+          <div>
+            <a href="capacitaciones.html" class="btn btn-outline" style="min-height: 42px; padding: 10px 20px; font-size: 0.9rem;">
+              <span>Ver todos los programas</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="cards-grid-4">
+          <!-- 1. Fundamentos BIM -->
+          <article class="course-card animate-fade-up delay-1">
+            <div class="course-media">
+              <img src="assets/img/courses/course-fundamentos.webp" alt="Planos arquitectónicos y computadora con conceptos fundamentales BIM" class="course-img" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <div class="course-body">
+              <span class="course-category-tag">Fundamentos</span>
+              <h3 class="course-title">Fundamentos BIM</h3>
+              <p class="course-desc">Conceptos, estándares y flujo de trabajo colaborativo para implementar BIM en proyectos reales.</p>
+              <div class="course-footer-action">
+                <span class="course-action-text">Ver programa</span>
+                <span class="course-action-arrow" aria-hidden="true">→</span>
+              </div>
+            </div>
+            <a href="capacitaciones.html" class="stretched-link" aria-label="Ver detalles de Fundamentos BIM" style="position: absolute; inset: 0;"></a>
+          </article>
+
+          <!-- 2. Modelado BIM -->
+          <article class="course-card animate-fade-up delay-2">
+            <div class="course-media">
+              <img src="assets/img/courses/course-modelado.webp" alt="Profesional modelando volumetría e instalaciones técnicas en software 3D" class="course-img" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <div class="course-body">
+              <span class="course-category-tag">Modelado</span>
+              <h3 class="course-title">Modelado BIM</h3>
+              <p class="course-desc">Desarrollo de modelos con estructura, arquitectura e instalaciones con enfoque en calidad geométrica.</p>
+              <div class="course-footer-action">
+                <span class="course-action-text">Ver programa</span>
+                <span class="course-action-arrow" aria-hidden="true">→</span>
+              </div>
+            </div>
+            <a href="capacitaciones.html" class="stretched-link" aria-label="Ver detalles de Modelado BIM" style="position: absolute; inset: 0;"></a>
+          </article>
+
+          <!-- 3. Coordinación BIM -->
+          <article class="course-card animate-fade-up delay-3">
+            <div class="course-media">
+              <img src="assets/img/courses/course-coordinacion.webp" alt="Sistemas MEP y detección de interferencias en modelo federado" class="course-img" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <div class="course-body">
+              <span class="course-category-tag">Coordinación</span>
+              <h3 class="course-title">Coordinación BIM</h3>
+              <p class="course-desc">Integración de especialidades, matrices de interferencias y resolución colaborativa de conflictos.</p>
+              <div class="course-footer-action">
+                <span class="course-action-text">Ver programa</span>
+                <span class="course-action-arrow" aria-hidden="true">→</span>
+              </div>
+            </div>
+            <a href="capacitaciones.html" class="stretched-link" aria-label="Ver detalles de Coordinación BIM" style="position: absolute; inset: 0;"></a>
+          </article>
+
+          <!-- 4. Planificación 4D -->
+          <article class="course-card animate-fade-up delay-4">
+            <div class="course-media">
+              <img src="assets/img/courses/course-planificacion.webp" alt="Estructura de edificación vinculada a fases de cronograma y simulación 4D" class="course-img" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <div class="course-body">
+              <span class="course-category-tag">Planificación</span>
+              <h3 class="course-title">Planificación 4D</h3>
+              <p class="course-desc">Vinculación del modelo con la planificación de obra para analizar secuencias constructivas.</p>
+              <div class="course-footer-action">
+                <span class="course-action-text">Ver programa</span>
+                <span class="course-action-arrow" aria-hidden="true">→</span>
+              </div>
+            </div>
+            <a href="capacitaciones.html" class="stretched-link" aria-label="Ver detalles de Planificación 4D" style="position: absolute; inset: 0;"></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Metodología de Proyecto -->
+    <section class="content-section bg-crema" aria-labelledby="metodologia-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="metodologia-title" class="section-title">
+            <span>Nuestra metodología de proyecto</span>
+            <span class="section-title-line" aria-hidden="true"></span>
+          </h2>
+          <p class="section-subtitle-text">Un proceso riguroso y ordenado que garantiza confiabilidad desde la conceptualización hasta la obra.</p>
+        </div>
+
+        <div class="methodology-bar">
+          <div class="step-item animate-fade-up delay-1">
+            <div class="step-header">
+              <div class="step-icon" aria-hidden="true">
+                <img src="assets/icons/icon-plan.svg" alt="" width="32" height="32">
+              </div>
+              <h3 class="step-title">1. Planificar</h3>
+            </div>
+            <p class="step-desc">Definimos objetivos, alcance de información, protocolos BEP y estándares BIM adaptados al proyecto.</p>
+          </div>
+
+          <div class="step-item animate-fade-up delay-2">
+            <div class="step-header">
+              <div class="step-icon" aria-hidden="true">
+                <img src="assets/icons/icon-cube.svg" alt="" width="32" height="32">
+              </div>
+              <h3 class="step-title">2. Modelar</h3>
+            </div>
+            <p class="step-desc">Desarrollamos modelos tridimensionales coordinados con nivel de detalle y parámetros consistentes.</p>
+          </div>
+
+          <div class="step-item animate-fade-up delay-3">
+            <div class="step-header">
+              <div class="step-icon" aria-hidden="true">
+                <img src="assets/icons/icon-coordination.svg" alt="" width="32" height="32">
+              </div>
+              <h3 class="step-title">3. Coordinar</h3>
+            </div>
+            <p class="step-desc">Integramos disciplinas, identificamos interferencias espaciales y resolvemos incompatibilidades de forma proactiva.</p>
+          </div>
+
+          <div class="step-item animate-fade-up delay-4">
+            <div class="step-header">
+              <div class="step-icon" aria-hidden="true">
+                <img src="assets/icons/icon-helmet.svg" alt="" width="32" height="32">
+              </div>
+              <h3 class="step-title">4. Ejecutar</h3>
+            </div>
+            <p class="step-desc">Acompañamos la implementación en campo y el uso efectivo de la información del modelo durante la construcción.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Por qué BIM Analytics (4 Reasons) -->
+    <section class="content-section bg-white" aria-labelledby="razones-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="razones-title" class="section-title">
+            <span>Por qué BIM Analytics</span>
+            <span class="section-title-line" aria-hidden="true"></span>
+          </h2>
+          <p class="section-subtitle-text">Principios de trabajo que nos permiten aportar valor técnico verificable a nuestros clientes.</p>
+        </div>
+
+        <div class="reasons-grid">
+          <div class="reason-card animate-fade-up delay-1">
+            <span class="reason-number">Pilar 01</span>
+            <h3 class="reason-title">Enfoque aplicado</h3>
+            <p class="reason-desc">Orientamos cada modelo y proceso hacia la constructibilidad y resolución de problemas reales de obra.</p>
+          </div>
+
+          <div class="reason-card animate-fade-up delay-2">
+            <span class="reason-number">Pilar 02</span>
+            <h3 class="reason-title">Integración de disciplinas</h3>
+            <p class="reason-desc">Articulamos arquitectura, estructuras e instalaciones MEP bajo un lenguaje técnico unificado.</p>
+          </div>
+
+          <div class="reason-card animate-fade-up delay-3">
+            <span class="reason-number">Pilar 03</span>
+            <h3 class="reason-title">Criterio técnico</h3>
+            <p class="reason-desc">Aplicamos buenas prácticas internacionales de estandarización sin sobrecargar los flujos del equipo.</p>
+          </div>
+
+          <div class="reason-card animate-fade-up delay-4">
+            <span class="reason-number">Pilar 04</span>
+            <h3 class="reason-title">Acompañamiento profesional</h3>
+            <p class="reason-desc">Trabajamos estrechamente junto a proyectistas y contratistas en cada etapa del ciclo de vida del proyecto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Llamado Final (Dark Banner) -->
+    <section class="bottom-cta-banner" aria-label="Contacto Directo">
+      <div class="container cta-banner-inner">
+        <div class="cta-banner-left">
+          <img src="assets/img/brand/simbolo-bim-analytics.png" alt="" class="cta-banner-symbol ambient-symbol" width="56" height="56" aria-hidden="true">
+          <div class="cta-banner-divider" aria-hidden="true"></div>
+          <div class="cta-banner-text">
+            <h3>¿Tienes un proyecto en mente?</h3>
+            <p>Conversemos sobre cómo BIM Analytics puede ayudarte a gestionarlo con mayor eficiencia y control técnico. Escríbenos a <strong>consulting@bim-analytics.io</strong>.</p>
+          </div>
+        </div>
+        <div class="cta-banner-action">
+          <a href="contacto.html" class="btn btn-primary">
+            <span>Solicitar información</span>
+            <span class="btn-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col-brand">
+                <a href="index.html" aria-label="BIM Analytics Inicio">
+          <img src="assets/img/brand/logo-bim-analytics-dark.png" alt="BIM Analytics" class="footer-logo" width="888" height="341">
+        </a>
+        <p>Consultoría BIM y capacitación profesional en el Perú, orientada a una gestión más clara, eficiente y colaborativa en proyectos de edificación e infraestructura.</p>
+        <span style="font-size: 0.88rem; color: #8C8077;">Operación en Lima, Perú</span>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-nav-list">
+          <li><a href="index.html" class="footer-nav-link">Inicio</a></li>
+          <li><a href="nosotros.html" class="footer-nav-link">Nosotros</a></li>
+          <li><a href="soluciones.html" class="footer-nav-link">Soluciones</a></li>
+          <li><a href="capacitaciones.html" class="footer-nav-link">Capacitaciones</a></li>
+          <li><a href="proyectos.html" class="footer-nav-link">Proyectos</a></li>
+          <li><a href="contacto.html" class="footer-nav-link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Soluciones BIM</h4>
+        <ul class="footer-nav-list">
+          <li><a href="soluciones.html#implementacion" class="footer-nav-link">Implementación BIM</a></li>
+          <li><a href="soluciones.html#modelado" class="footer-nav-link">Modelado BIM</a></li>
+          <li><a href="soluciones.html#coordinacion" class="footer-nav-link">Coordinación de especialidades</a></li>
+          <li><a href="soluciones.html#gestion" class="footer-nav-link">Gestión de información</a></li>
+          <li><a href="soluciones.html#planificacion" class="footer-nav-link">Planificación 4D</a></li>
+          <li><a href="soluciones.html#acompanamiento" class="footer-nav-link">Acompañamiento BIM</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contacto Oficial</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:consulting@bim-analytics.io">consulting@bim-analytics.io</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <a href="https://wa.me/51993463118" target="_blank" rel="noopener noreferrer">+51 993 463 118</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <a href="https://bim-analytics.io" target="_blank" rel="noopener">https://bim-analytics.io</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Lima, Perú</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 BIM Analytics. Todos los derechos reservados.</p>
+      <div class="footer-bottom-links">
+        <a href="privacidad.html">Política de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <!-- Back to Top Floating Button -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Volver al inicio">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+</html>
+
+
+

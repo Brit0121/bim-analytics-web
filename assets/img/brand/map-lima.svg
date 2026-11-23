@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Plano de ubicación técnica en Lima, Perú">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3ED"/>
+      <stop offset="100%" stop-color="#EFE8DE"/>
+    </linearGradient>
+    
+    <!-- Subtle Grid Pattern -->
+    <pattern id="archGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#E5DCCE" stroke-width="0.75" stroke-dasharray="2,3"/>
+    </pattern>
+
+    <!-- Pin Shadow -->
+    <filter id="pinShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#2C2522" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="600" height="320" fill="url(#mapBg)"/>
+  <rect width="600" height="320" fill="url(#archGrid)" opacity="0.6"/>
+
+  <!-- Stylized Coastline / Ocean Area (Lima Pacific Shore) -->
+  <path d="M-20,340 C80,290 140,240 180,180 C210,130 220,70 200,-20 L-20,-20 Z" fill="#E6DFD4" opacity="0.8"/>
+  <path d="M-20,340 C80,290 140,240 180,180 C210,130 220,70 200,-20" fill="none" stroke="#D3C7B5" stroke-width="2"/>
+
+  <!-- Secondary Arteries / Street Network -->
+  <g stroke="#E0D5C5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M 120 340 L 260 220 L 380 180 L 520 140 L 620 120"/>
+    <path d="M 190 280 L 320 280 L 460 260 L 620 250"/>
+    <path d="M 170 120 L 290 80 L 440 60 L 620 40"/>
+    <path d="M 240 340 L 280 20 L 290 -20"/>
+    <path d="M 400 340 L 420 140 L 410 -20"/>
+    <path d="M 500 340 L 510 180 L 530 -20"/>
+  </g>
+
+  <!-- Main Arteries / Expressways (e.g. Vía Expresa / Javier Prado / Panamericana style) -->
+  <g stroke="#D1C3B0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Diagonal Avenue -->
+    <path d="M 160 340 C 240 260 280 200 360 120 C 420 60 480 30 620 10"/>
+    <!-- Transverse Avenue -->
+    <path d="M 140 160 C 220 170 320 180 440 170 C 520 165 580 160 620 155"/>
+    <!-- Coastline Highway -->
+    <path d="M 20 340 C 100 280 160 230 195 180 C 225 125 215 65 200 -20"/>
+  </g>
+
+  <!-- Arterial Centerlines -->
+  <g stroke="#FAF7F1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M 160 340 C 240 260 280 200 360 120 C 420 60 480 30 620 10"/>
+    <path d="M 140 160 C 220 170 320 180 440 170 C 520 165 580 160 620 155"/>
+    <path d="M 20 340 C 100 280 160 230 195 180 C 225 125 215 65 200 -20"/>
+  </g>
+
+  <!-- Urban Blocks / Districts Slices (Subtle architectural shapes) -->
+  <g fill="#EBE3D7" opacity="0.6">
+    <rect x="250" y="80" width="40" height="30" rx="3"/>
+    <rect x="305" y="70" width="55" height="35" rx="3"/>
+    <rect x="270" y="130" width="60" height="35" rx="3"/>
+    <rect x="345" y="130" width="70" height="35" rx="3"/>
+    <rect x="300" y="200" width="65" height="45" rx="3"/>
+    <rect x="380" y="190" width="50" height="50" rx="3"/>
+    <rect x="445" y="100" width="55" height="45" rx="3"/>
+  </g>
+
+  <!-- Technical Overlay Coordinates and Crosshairs -->
+  <g stroke="#A56F50" stroke-width="1" opacity="0.4">
+    <!-- Crosshair at Pin -->
+    <line x1="335" y1="130" x2="335" y2="170" stroke-dasharray="2,2"/>
+    <line x1="315" y1="150" x2="355" y2="150" stroke-dasharray="2,2"/>
+    <circle cx="335" cy="150" r="18" fill="none" stroke="#A56F50" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Technical Coordinate Label -->
+  <text x="24" y="300" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="11" font-weight="600" fill="#8C8077" letter-spacing="0.08em">
+    12°02'36"S 77°01'42"W · PERÚ
+  </text>
+
+  <!-- Pin Marker Group -->
+  <g transform="translate(335, 140)" filter="url(#pinShadow)">
+    <!-- Pin Icon -->
+    <path d="M 0,-36 C -11,-36 -20,-27 -20,-16 C -20,-4 -6,8 0,18 C 6,8 20,-4 20,-16 C 20,-27 11,-36 0,-36 Z" fill="#A56F50"/>
+    <circle cx="0" cy="-16" r="7" fill="#FAF7F1"/>
+  </g>
+
+  <!-- Pin Label Badge -->
+  <g transform="translate(335, 172)">
+    <rect x="-56" y="0" width="112" height="26" rx="13" fill="#2C2522" opacity="0.95"/>
+    <text x="0" y="17" text-anchor="middle" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#FAF7F1" letter-spacing="0.02em">
+      Lima, Perú
+    </text>
+  </g>
+</svg>

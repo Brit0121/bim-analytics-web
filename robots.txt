@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bim-analytics.io/sitemap.xml
